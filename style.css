@@ -1,0 +1,72 @@
+table {
+  color:black;
+  border-radius: 8px;
+  border: 2px solid red;
+}
+p {
+  color: #483D8B;
+}
+
+.privet01 {
+  color: #8B4513;
+  font-family: "Arial";
+  font-style: italic;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px black;
+  }
+
+[class="privet02"] {
+    font-family: 'Pacifico', cursive;
+    color: #DAA520
+}
+
+#privet03 {
+border:1px solid #ccc; /*рамка*/
+background:#eaeaea; /*фон*/
+padding: 10px 10px; /*отступы внутри*/
+text-decoration: none; /*убрать подчеркивание ссылки*/
+}
+
+.button {
+  padding: 1%;
+  margin: 1%;
+  background: #14226b;
+  color: #f7f1f1;
+  border: none;
+  border-radius: 4px;
+  animation-name: flash;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0, 0, 0.7, 0.94);
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.68, 0.99);
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-duration: 4s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes flash {   
+   0% { opacity: 1.0; }
+   50% { opacity: 0.5; }
+   100% { opacity: 1.0; }
+}
+
+//Firefox 1+
+@-webkit-keyframes flash {   
+   0% { opacity: 1.0; }
+   50% { opacity: 0.5; }
+   100% { opacity: 1.0; }
+}
+
+//Safari 3-4
+@-moz-keyframes flash {   
+   0% { opacity: 1.0; }
+   50% { opacity: 0.5; }
+   100% { opacity: 1.0; }
+}
+
+.cursor {
+cursor: pointer;
+}
